@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using System.Xml;
 
 namespace SvgLib
@@ -23,6 +23,8 @@ namespace SvgLib
         }
 
         public void Save(Stream stream) => _document.Save(stream);
+
+        public void Save(string path) => _document.Save(path);
 
         public SvgViewBox ViewBox
         {
